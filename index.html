@@ -1,14 +1,70 @@
-<!DOCTYPE html>
-<html lang=“en”>
-    <head>
-        <meta charset=“utf-8”>
-        <title> Git Test Page </title>
-        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
-    </head>
-
-    <body>
-        <div class="container">
-            <p>Hello world!</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isaac Meadow — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">Isaac Meadow</a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="https://uiowa.edu" target="_blank" rel="noopener">External Link</a>
         </div>
-    </body>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Hello! 👋</h1>
+      <h2>Welcome to my BAIS:3300 HTML & CSS Project</h2>
+      <p>
+        My name is Isaac Meadow. I’m currently a senior studying Business Analytics & Information Systems, and this site is part of my Digital Product Management class. I enjoy spending free time hanging out with friends and family, rooting on the Hawkeyes as well as the Chicago Cubs and Chicago Bears!
+      </p>
+    </section>
+
+    <section>
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Major: Business Analytics & Information Systems</li>
+        <li>Interests: Product Management, Data Analytics, Sports, Video Games</li>
+      </ul>
+    </section>
+
+    <section>
+        <h2>Photos</h2>
+        <div class="gallery small-gallery">
+          <figure class="card photo-card">
+            <img class="tiny-photo" src="images/IMG_3890.jpeg"
+                 alt="My girlfriend and I at the botanical gardens">
+            <figcaption>My girlfriend and I at the botanical gardens</figcaption>
+          </figure>
+      
+          <figure class="card photo-card">
+            <img class="tiny-photo" src="images/IMG_0363.jpeg"
+                 alt="My Dad and I at the Bulls game">
+            <figcaption>My Dad and I at the Bulls game</figcaption>
+          </figure>
+        </div>
+      </section>      
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Isaac Meadow • Built for BAIS:3300</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
+
+
