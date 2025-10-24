@@ -1,11 +1,118 @@
-body { 
-    background: #f5f5fa; 
-    color: #1f1f29; 
+/* Simple, straightforward styles for Isaac Meadow */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5; /* required background-color */
+  color: #222;
 }
 
-.container { 
-    width: 85%;
-    margin: auto;
-    background-color: white;
-    border: 1px solid black;
+/* Layout container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
+
+/* Header & nav */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  margin-left: 12px;
+}
+
+/* Headings & text */
+h1 { font-size: 28px; margin: 16px 0 8px; }
+h2 { font-size: 20px; margin: 16px 0 8px; }
+p  { margin: 0 0 12px; }
+
+/* Lists */
+ul { padding-left: 20px; margin: 0 0 12px; }
+.compact-list { margin: 0; padding-left: 18px; }
+
+/* Card (uses border, margin, padding = box model) */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;  /* border */
+  padding: 12px;           /* padding */
+  margin: 12px 0;          /* margin */
+  border-radius: 6px;
+}
+
+/* Very small photos */
+.small-gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.photo-card {
+  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tiny-photo {
+  display: inline-block;
+  max-width: 90px;   /* really small */
+  max-height: 90px;  /* really small */
+  border: 1px solid #ccc;
+  padding: 3px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* Table styled via external CSS */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #ddd;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 24px;
+}
+
+  
+  
+  
