@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isaac Meadow — About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">Isaac Meadow</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="https://uiowa.edu" target="_blank" rel="noopener">External Link</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>About Me</h1>
+      <p>
+        Hi! I’m Isaac Meadow, a Business Analytics & Information Systems major at the University of Iowa. 
+    </section>
+
+    <section>
+      <h2>Weekly Schedule</h2>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Commitments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td><strong>Work:</strong> 9:00 AM – 1:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>
+              <ul class="compact-list">
+                <li><strong>The Politics of International Economics:</strong> 9:30 AM – 10:45 AM</li>
+                <li><strong>Games, Culture, and Society:</strong> 12:30 PM – 1:45 PM</li>
+                <li><strong>Digital Product Management:</strong> 2:00 PM – 3:15 PM</li>
+                <li><strong>Business Analytics & Information Systems Capstone:</strong> 3:30 PM – 4:45 PM</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td><strong>Work:</strong> 12:30 PM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Thursday</th>
+            <td>
+              <ul class="compact-list">
+                <li><strong>The Politics of International Economics:</strong> 9:30 AM – 10:45 AM</li>
+                <li><strong>Games, Culture, and Society:</strong> 12:30 PM – 1:45 PM</li>
+                <li><strong>Digital Product Management:</strong> 2:00 PM – 3:15 PM</li>
+                <li><strong>Business Analytics & Information Systems Capstone:</strong> 3:30 PM – 4:45 PM</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Friday</th>
+            <td><strong>Work:</strong> 9:00 AM – 1:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside class="tip card">
+      <h2>Connect with Me</h2>
+      <p>
+        <a href="https://www.linkedin.com/in/isaac-meadow-977b09283" target="_blank" rel="noopener">LinkedIn</a><br>
+        <a href="https://github.com/isaacfmeadow" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Isaac Meadow • Built for BAIS:3300</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
